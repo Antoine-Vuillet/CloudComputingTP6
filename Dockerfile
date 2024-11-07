@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install FastAPI and Uvicorn
-RUN pip install fastapi uvicorn
+RUN pip install -r requirements.txt
 
 # Make port 3000 available to the world outside this container
 EXPOSE 3000
